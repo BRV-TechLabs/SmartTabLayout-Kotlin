@@ -16,8 +16,4 @@ class SecondFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_two_layout, container, false)
     }
 
-    override fun onViewCreated(view: View, @Nullable savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-    }
 }
