@@ -14,8 +14,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_tab_layout)
-
-
         val adapter = FragmentPagerItemAdapter(
             supportFragmentManager, FragmentPagerItems.with(this)
                 .add("First Fragment", FirstFragment::class.java)
@@ -24,9 +22,7 @@ class MainActivity : AppCompatActivity() {
                 .add("Fourth Fragment", FourthFragment::class.java)
                 .create()
         )
-
         viewPager.adapter = adapter
         viewPagerTab.setViewPager(viewPager)
-
     }
 }
